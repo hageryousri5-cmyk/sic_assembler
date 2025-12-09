@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Assemble All Examples",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": ["--all-examples"],
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Assemble program.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": ["example/program.txt"],
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Assemble program2.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": ["example/program2.txt"],
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Assemble program3.txt",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": ["example/program3.txt"],
+            "justMyCode": true
+        }
+    ]
+}
