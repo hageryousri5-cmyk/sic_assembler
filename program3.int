@@ -1,0 +1,14 @@
+Intermediate File:
+Address  Label      Opcode   Operand    Source
+004000   SUM        START    4000       SUM      START 4000
+004000   FIRST      LDX      ZERO       FIRST    LDX   ZERO
+004003              LDA      ZERO                LDA   ZERO
+004006   LOOP       ADD      TABLE,X    LOOP     ADD   TABLE,X
+004009              TIX      COUNT               TIX   COUNT
+00400C              JLT      LOOP                JLT   LOOP
+00400F              STA      TOTAL               STA   TOTAL
+004012   TABLE      RESW     2000       TABLE    RESW  2000
+005782   COUNT      RESW     1          COUNT    RESW  1
+005785   ZERO       WORD     0          ZERO     WORD  0
+005788   TOTAL      RESW     1          TOTAL    RESW  1
+00578B              END      FIRST               END   FIRST

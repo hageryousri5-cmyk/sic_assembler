@@ -1,0 +1,14 @@
+Intermediate File:
+Address  Label      Opcode   Operand    Source
+001500              START    1500                START 1500
+001500   FIRST      LDX      SH         FIRST    LDX   SH
+001503              LDA      SH                  LDA   SH
+001506   LOOP       ADD      ALPHA,X    LOOP     ADD   Alpha,X
+001509              TIX      COUNT               TIX   COUNT
+00150C              JLT      LOOP                JLT   LOOP
+00150F              STA      RESULT              STA   Result
+001512   ALPHA      RESW     2000       Alpha    RESW  2000
+002C82   COUNT      RESW     1          COUNT    RESW  1
+002C85   SH         WORD     0          SH       WORD  0
+002C88   RESULT     RESW     1          Result   RESW  1
+002C8B              END      FIRST               END   FIRST
