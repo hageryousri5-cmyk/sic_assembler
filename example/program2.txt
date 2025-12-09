@@ -1,0 +1,12 @@
+         START 1500
+FIRST    LDX   SH
+         LDA   SH
+LOOP     ADD   Alpha,X
+         TIX   COUNT
+         JLT   LOOP
+         STA   Result
+Alpha    RESW  2000
+COUNT    RESW  1
+SH       WORD  0
+Result   RESW  1
+         END   FIRST
